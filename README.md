@@ -1,26 +1,27 @@
-- [References](#org4b4b05f)
-- [Development](#org32a136f)
-  - [Preparation](#org81bbb31)
-    - [Installing the Compiler](#org0965df3)
-    - [Setting up the Development Environment](#org766e5a7)
-    - [Create project](#org8442196)
-    - [Working in `PSCi`](#orge690082)
+- [References](#orge816f7c)
+- [Development](#org8018840)
+  - [Preparation](#org30c08f3)
+    - [Installing the Compiler](#org3b1c294)
+    - [Setting up the Development Environment](#org58dbde2)
+    - [Create project](#orgdef046c)
+    - [Working in `PSCi`](#org270b1c4)
 
 
 
-<a id="org4b4b05f"></a>
+<a id="orge816f7c"></a>
 
 # References
 
 1.  <http://www.purescript.org/>
+2.  [*PureScript by Example*](https://leanpub.com/purescript) by Phil Freeman
 
 
-<a id="org32a136f"></a>
+<a id="org8018840"></a>
 
 # Development
 
 
-<a id="org81bbb31"></a>
+<a id="org30c08f3"></a>
 
 ## Preparation
 
@@ -28,7 +29,7 @@
 2.  purescript
 
 
-<a id="org0965df3"></a>
+<a id="org3b1c294"></a>
 
 ### Installing the Compiler
 
@@ -55,7 +56,7 @@ npm install -g purescript
 ```
 
 
-<a id="org766e5a7"></a>
+<a id="org58dbde2"></a>
 
 ### Setting up the Development Environment
 
@@ -64,7 +65,7 @@ npm install -g pulp bower
 ```
 
 
-<a id="org8442196"></a>
+<a id="orgdef046c"></a>
 
 ### Create project
 
@@ -73,7 +74,7 @@ pulp init
 ```
 
 
-<a id="orge690082"></a>
+<a id="org270b1c4"></a>
 
 ### Working in `PSCi`
 

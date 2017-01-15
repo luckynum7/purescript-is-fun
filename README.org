@@ -5,6 +5,7 @@
 * References
 
   1. [[http://www.purescript.org/]]
+  2. [[https://leanpub.com/purescript][/PureScript by Example/]] by Phil Freeman
 
 * Development
 
