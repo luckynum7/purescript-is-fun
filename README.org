@@ -64,3 +64,11 @@ pulp psci
 
    1. [[https://github.com/tfausak/purescript-batteries]]
    2. [[https://github.com/purescript-contrib/purescript-base]]
+
+** PureScript + X
+
+   1. [[https://github.com/alexmingoia/purescript-pux]]
+      1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
+      2) Slides: [[http://purescript-react-rally.surge.sh/]]
+   2. [[https://github.com/rgrempel/purescript-elm]]
+      1) [[https://www.youtube.com/watch?v=O_kWwaghZ9U][Elm in Purescript]]

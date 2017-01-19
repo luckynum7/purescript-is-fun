@@ -1,20 +1,21 @@
-- [Development](#org3e45466)
-  - [Preparation](#orga4abf79)
-    - [Installing the Compiler](#org10679ad)
-    - [Setting up the Development Environment](#org139c65f)
-    - [Create project](#org91fd7f8)
-    - [Working in `PSCi`](#org765fc80)
-- [References](#orgedab810)
-  - [Bundle](#org5010f81)
+- [Development](#orgca33536)
+  - [Preparation](#org5c0b7a3)
+    - [Installing the Compiler](#orge55bc72)
+    - [Setting up the Development Environment](#org73aa8bf)
+    - [Create project](#orgaae051a)
+    - [Working in `PSCi`](#org86aff42)
+- [References](#org7864684)
+  - [Bundle](#orgd9c2f20)
+  - [PureScript + X](#org11a87be)
 
 
 
-<a id="org3e45466"></a>
+<a id="orgca33536"></a>
 
 # Development
 
 
-<a id="orga4abf79"></a>
+<a id="org5c0b7a3"></a>
 
 ## Preparation
 
@@ -22,7 +23,7 @@
 2.  purescript
 
 
-<a id="org10679ad"></a>
+<a id="orge55bc72"></a>
 
 ### Installing the Compiler
 
@@ -49,7 +50,7 @@ npm install -g purescript
 ```
 
 
-<a id="org139c65f"></a>
+<a id="org73aa8bf"></a>
 
 ### Setting up the Development Environment
 
@@ -58,7 +59,7 @@ npm install -g pulp bower
 ```
 
 
-<a id="org91fd7f8"></a>
+<a id="orgaae051a"></a>
 
 ### Create project
 
@@ -67,7 +68,7 @@ pulp init
 ```
 
 
-<a id="org765fc80"></a>
+<a id="org86aff42"></a>
 
 ### Working in `PSCi`
 
@@ -76,7 +77,7 @@ pulp psci
 ```
 
 
-<a id="orgedab810"></a>
+<a id="org7864684"></a>
 
 # References
 
@@ -88,9 +89,20 @@ pulp psci
 3.  <https://github.com/passy/awesome-purescript>
 
 
-<a id="org5010f81"></a>
+<a id="orgd9c2f20"></a>
 
 ## Bundle
 
 1.  <https://github.com/tfausak/purescript-batteries>
 2.  <https://github.com/purescript-contrib/purescript-base>
+
+
+<a id="org11a87be"></a>
+
+## PureScript + X
+
+1.  <https://github.com/alexmingoia/purescript-pux>
+    1.  [Michael Trotter - PureScript & Pux &#x2013; a safer, more expressive way to React](https://www.youtube.com/watch?v=MvAiOTJNLNQ)
+    2.  Slides: <http://purescript-react-rally.surge.sh/>
+2.  <https://github.com/rgrempel/purescript-elm>
+    1.  [Elm in Purescript](https://www.youtube.com/watch?v=O_kWwaghZ9U)
