@@ -2,11 +2,6 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
-* References
-
-  1. [[http://www.purescript.org/]]
-  2. [[https://leanpub.com/purescript][/PureScript by Example/]] by Phil Freeman
-
 * Development
 
 ** Preparation
@@ -55,3 +50,17 @@ pulp init
 #+BEGIN_SRC bash
 pulp psci
 #+END_SRC
+
+* References
+
+  1. [[http://www.purescript.org/]]
+  2. [[https://leanpub.com/purescript][/PureScript by Example/]] by Phil Freeman
+     1) [[https://github.com/purescript]]
+     2) [[https://github.com/purescript-node]]
+     3) [[https://github.com/purescript-contrib]]
+  3. [[https://github.com/passy/awesome-purescript]]
+
+** Bundle
+
+   1. [[https://github.com/tfausak/purescript-batteries]]
+   2. [[https://github.com/purescript-contrib/purescript-base]]
