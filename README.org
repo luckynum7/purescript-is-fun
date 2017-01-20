@@ -17,7 +17,15 @@
 pacman -S purescript
 #+END_SRC
 
-2.To install ~purescript~ from ~npm~, you may need to install ~haskell-stack~ package first
+2.Install use =Purescript Version Manager= [[https://github.com/ThomasCrevoisier/psvm-js][psvm]]
+
+#+BEGIN_SRC bash
+npm install -g psvm
+psvm install-latest
+psvm use <installed-version>
+#+END_SRC
+
+3.To install ~purescript~ from ~npm~, you /may/ need to install ~haskell-stack~ package first
 
 [[https://docs.haskellstack.org/en/stable/install_and_upgrade/]]
 

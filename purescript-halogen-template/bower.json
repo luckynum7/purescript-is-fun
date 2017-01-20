@@ -1,14 +1,17 @@
 {
-  "name": "purescript-is-fun",
+  "private": true,
+  "name": "purescript-halogen-template",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "output"
+    "output",
+    "dist"
   ],
   "dependencies": {
     "purescript-prelude": "^2.1.0",
-    "purescript-console": "^2.0.0"
+    "purescript-console": "^2.0.0",
+    "purescript-halogen": "^0.12.0"
   },
   "devDependencies": {
     "purescript-psci-support": "^2.0.0"
