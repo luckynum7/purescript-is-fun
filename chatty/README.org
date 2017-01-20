@@ -1,0 +1,17 @@
+#+TITLE:      purescript-is-fun/chatty
+#+OPTIONS:    ^:{}
+#+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
+
+* Development
+
+** How to setup environment
+
+#+BEGIN_SRC bash
+npm install
+#+END_SRC
+
+** How to build
+
+#+BEGIN_SRC bash
+npm run build
+#+END_SRC
