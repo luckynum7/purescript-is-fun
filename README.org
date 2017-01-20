@@ -76,6 +76,7 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
 ** UI Libraries
 
    1. [[https://github.com/slamdata/purescript-halogen][purescript-halogen]]: A declarative, type-safe UI library for PureScript.
+      1) [[https://github.com/slamdata/purescript-halogen-template]]
    2. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to *React*. [[https://www.purescript-pux.org/]]
       1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
          - Slides: [[http://purescript-react-rally.surge.sh/]]
@@ -93,3 +94,4 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
 ** Interesting
 
    1. [[https://github.com/purescript/purescript-generics][purescript-generics]]: Generic programming.
+   2. [[https://github.com/osener/wring][wring]]: Extract content from webpages using CSS Selectors, XPath, and JS expressions. (phantomjs)
