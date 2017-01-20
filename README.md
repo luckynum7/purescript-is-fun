@@ -1,21 +1,24 @@
-- [Development](#orgca33536)
-  - [Preparation](#org5c0b7a3)
-    - [Installing the Compiler](#orge55bc72)
-    - [Setting up the Development Environment](#org73aa8bf)
-    - [Create project](#orgaae051a)
-    - [Working in `PSCi`](#org86aff42)
-- [References](#org7864684)
-  - [Bundle](#orgd9c2f20)
-  - [PureScript + X](#org11a87be)
+- [Development](#org4a0e3a2)
+  - [Preparation](#orgf1cac27)
+    - [Installing the Compiler](#orgdd31434)
+    - [Setting up the Development Environment](#orge5c3c27)
+    - [Create project](#orga877af9)
+    - [Working in `PSCi`](#org6d16997)
+  - [Troubleshooting](#org70063f0)
+    - [Missing `libtinfo.so.5`](#org3dd2764)
+- [References](#orgc5b9c63)
+  - [Bundle (Preludes)](#orgfefa69d)
+  - [UI Libraries](#org53c1c07)
+  - [PureScript + X](#org10da64a)
 
 
 
-<a id="orgca33536"></a>
+<a id="org4a0e3a2"></a>
 
 # Development
 
 
-<a id="org5c0b7a3"></a>
+<a id="orgf1cac27"></a>
 
 ## Preparation
 
@@ -23,7 +26,7 @@
 2.  purescript
 
 
-<a id="orge55bc72"></a>
+<a id="orgdd31434"></a>
 
 ### Installing the Compiler
 
@@ -33,14 +36,14 @@
 pacman -S purescript
 ```
 
-2.To install `purescript` from `npm`, you may need to install `stack` package first
+2.To install `purescript` from `npm`, you may need to install `haskell-stack` package first
 
 <https://docs.haskellstack.org/en/stable/install_and_upgrade/>
 
 ```bash
 apt-get install haskell-stack
 # or
-pacman -S stack
+pacman -S haskell-stack
 ```
 
 then
@@ -50,7 +53,7 @@ npm install -g purescript
 ```
 
 
-<a id="org73aa8bf"></a>
+<a id="orge5c3c27"></a>
 
 ### Setting up the Development Environment
 
@@ -59,7 +62,7 @@ npm install -g pulp bower
 ```
 
 
-<a id="orgaae051a"></a>
+<a id="orga877af9"></a>
 
 ### Create project
 
@@ -68,7 +71,7 @@ pulp init
 ```
 
 
-<a id="org86aff42"></a>
+<a id="org6d16997"></a>
 
 ### Working in `PSCi`
 
@@ -77,7 +80,19 @@ pulp psci
 ```
 
 
-<a id="org7864684"></a>
+<a id="org70063f0"></a>
+
+## Troubleshooting
+
+
+<a id="org3dd2764"></a>
+
+### Missing `libtinfo.so.5`
+
+Install `ncurses5-compat-libs` from [AUR](https://aur.archlinux.org/packages/ncurses5-compat-libs/)
+
+
+<a id="orgc5b9c63"></a>
 
 # References
 
@@ -86,23 +101,31 @@ pulp psci
     1.  <https://github.com/purescript>
     2.  <https://github.com/purescript-node>
     3.  <https://github.com/purescript-contrib>
-3.  <https://github.com/passy/awesome-purescript>
+3.  [awesome-purescript](https://github.com/passy/awesome-purescript)
+4.  <https://github.com/trending/purescript>
 
 
-<a id="orgd9c2f20"></a>
+<a id="orgfefa69d"></a>
 
-## Bundle
+## Bundle (Preludes)
 
-1.  <https://github.com/tfausak/purescript-batteries>
+1.  [purescript-batteries](https://github.com/tfausak/purescript-batteries): :battery: A PureScript prelude with more features.
 2.  <https://github.com/purescript-contrib/purescript-base>
 
 
-<a id="org11a87be"></a>
+<a id="org53c1c07"></a>
+
+## UI Libraries
+
+1.  [purescript-pux](https://github.com/alexmingoia/purescript-pux): A PureScript interface to React. <https://www.purescript-pux.org/>
+    1.  [Michael Trotter - PureScript & Pux &#x2013; a safer, more expressive way to React](https://www.youtube.com/watch?v=MvAiOTJNLNQ)
+        -   Slides: <http://purescript-react-rally.surge.sh/>
+        -   Source: <https://github.com/spicydonuts/purescript-spectacle-presentation>
+
+
+<a id="org10da64a"></a>
 
 ## PureScript + X
 
-1.  <https://github.com/alexmingoia/purescript-pux>
-    1.  [Michael Trotter - PureScript & Pux &#x2013; a safer, more expressive way to React](https://www.youtube.com/watch?v=MvAiOTJNLNQ)
-    2.  Slides: <http://purescript-react-rally.surge.sh/>
-2.  <https://github.com/rgrempel/purescript-elm>
+1.  <https://github.com/rgrempel/purescript-elm> (Elm)
     1.  [Elm in Purescript](https://www.youtube.com/watch?v=O_kWwaghZ9U)
