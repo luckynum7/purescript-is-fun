@@ -65,7 +65,8 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
      2) [[https://github.com/purescript-node]]
      3) [[https://github.com/purescript-contrib]]
   3. [[https://github.com/passy/awesome-purescript][awesome-purescript]]
-  4. [[https://github.com/trending/purescript]]
+  4. [[https://pursuit.purescript.org/]]
+  5. [[https://github.com/trending/purescript]]
 
 ** Bundle (Preludes)
 
@@ -74,12 +75,21 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
 
 ** UI Libraries
 
-   1. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to React. [[https://www.purescript-pux.org/]]
+   1. [[https://github.com/slamdata/purescript-halogen][purescript-halogen]]: A declarative, type-safe UI library for PureScript.
+   2. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to *React*. [[https://www.purescript-pux.org/]]
       1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
          - Slides: [[http://purescript-react-rally.surge.sh/]]
          - Source: [[https://github.com/spicydonuts/purescript-spectacle-presentation]]
+   3. [[https://github.com/paf31/purescript-thermite][purescript-thermite]]: A simple PureScript wrapper for *React*.
+   4. [[https://github.com/sharkdp/purescript-flare][purescript-flare]]: A special-purpose UI library for Purescript.
+   5. [[https://github.com/zrho/purescript-optic-ui][purescript-optic-ui]]: PureScript UI framework based on lenses.
+   6. [[https://github.com/slamdata/purescript-css][purescript-css]]: A type-safe library for describing, manipulating, and rendering CSS.
 
 ** PureScript + X
 
-   1. [[https://github.com/rgrempel/purescript-elm]] (Elm)
+   1. [[https://github.com/rgrempel/purescript-elm]] (*Elm*)
       1) [[https://www.youtube.com/watch?v=O_kWwaghZ9U][Elm in Purescript]]
+
+** Interesting
+
+   1. [[https://github.com/purescript/purescript-generics][purescript-generics]]: Generic programming.
