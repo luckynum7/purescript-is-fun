@@ -1,0 +1,7 @@
+#+TITLE:      purescript-is-fun
+#+OPTIONS:    ^:{}
+#+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
+
+* How to update the template
+
+Copy from [[https://github.com/slamdata/purescript-halogen-template]]
