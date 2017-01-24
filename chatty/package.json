@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "postinstall": "bower install",
-    "build": "pulp browserify --optimise --to dist/app.js",
-    "watch": "pulp -w browserify --to dist/app.js"
+    "build": "pulp browserify --jobs 4 --optimise --to dist/app.js",
+    "watch": "pulp --watch browserify --jobs 4 --to dist/app.js"
   },
   "dependencies": {
     "virtual-dom": "^2.1.1"
