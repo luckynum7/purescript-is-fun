@@ -4,6 +4,7 @@
         "postinstall": "bower install",
         "clean": "node -e \"var d='dist',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
         "docs": "pulp docs",
+        "test": "pulp test",
         "build": "webpack --progress --bail",
         "dev": "webpack-dev-server --progress --hot --inline",
         "-build:psc": "pulp browserify --jobs 4 --optimise --to dist/app.js",
