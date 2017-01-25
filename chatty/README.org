@@ -10,6 +10,12 @@
 npm install
 #+END_SRC
 
+** How to develop
+
+#+BEGIN_SRC bash
+npm run dev
+#+END_SRC
+
 ** How to build
 
 #+BEGIN_SRC bash
