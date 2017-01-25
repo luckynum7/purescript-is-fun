@@ -1,25 +1,24 @@
-- [Development](#org0c845ac)
-  - [Preparation](#orgc0f8b7b)
-    - [Installing the Compiler](#org2174165)
-    - [Setting up the Development Environment](#orgc102a67)
-    - [Create project](#orgd08eeb4)
-    - [Working in `PSCi`](#org945e22c)
-  - [Troubleshooting](#org10e8e39)
-    - [Missing `libtinfo.so.5`](#org72fa89c)
-- [References](#orgee22b22)
-  - [Bundle (Preludes)](#org0185bb1)
-  - [UI Libraries](#org6ff0621)
-  - [PureScript + X](#org54366b4)
-  - [Interesting](#org608e849)
+- [Development](#org0ac769c)
+  - [Preparation](#orgafdb365)
+    - [Installing the Compiler](#org7863738)
+    - [Setting up the Development Environment](#orge05c8e1)
+    - [Create project](#org9958133)
+    - [Working in `PSCi`](#org0063973)
+  - [Troubleshooting](#orgf4ea1ba)
+    - [Missing `libtinfo.so.5`](#orgc5062fc)
+- [References](#orgc404790)
+  - [UI Libraries](#org666937d)
+  - [PureScript + X](#org560fe5d)
+  - [Interesting](#orgeda8a96)
 
 
 
-<a id="org0c845ac"></a>
+<a id="org0ac769c"></a>
 
 # Development
 
 
-<a id="orgc0f8b7b"></a>
+<a id="orgafdb365"></a>
 
 ## Preparation
 
@@ -27,7 +26,7 @@
 2.  purescript
 
 
-<a id="org2174165"></a>
+<a id="org7863738"></a>
 
 ### Installing the Compiler
 
@@ -62,7 +61,7 @@ npm install -g purescript
 ```
 
 
-<a id="orgc102a67"></a>
+<a id="orge05c8e1"></a>
 
 ### Setting up the Development Environment
 
@@ -71,7 +70,7 @@ npm install -g pulp bower
 ```
 
 
-<a id="orgd08eeb4"></a>
+<a id="org9958133"></a>
 
 ### Create project
 
@@ -80,7 +79,7 @@ pulp init
 ```
 
 
-<a id="org945e22c"></a>
+<a id="org0063973"></a>
 
 ### Working in `PSCi`
 
@@ -89,19 +88,19 @@ pulp psci
 ```
 
 
-<a id="org10e8e39"></a>
+<a id="orgf4ea1ba"></a>
 
 ## Troubleshooting
 
 
-<a id="org72fa89c"></a>
+<a id="orgc5062fc"></a>
 
 ### Missing `libtinfo.so.5`
 
 Install `ncurses5-compat-libs` from [AUR](https://aur.archlinux.org/packages/ncurses5-compat-libs/)
 
 
-<a id="orgee22b22"></a>
+<a id="orgc404790"></a>
 
 # References
 
@@ -115,15 +114,7 @@ Install `ncurses5-compat-libs` from [AUR](https://aur.archlinux.org/packages/ncu
 5.  <https://github.com/trending/purescript>
 
 
-<a id="org0185bb1"></a>
-
-## Bundle (Preludes)
-
-1.  [purescript-batteries](https://github.com/tfausak/purescript-batteries): :battery: A PureScript prelude with more features.
-2.  <https://github.com/purescript-contrib/purescript-base>
-
-
-<a id="org6ff0621"></a>
+<a id="org666937d"></a>
 
 ## UI Libraries
 
@@ -139,7 +130,7 @@ Install `ncurses5-compat-libs` from [AUR](https://aur.archlinux.org/packages/ncu
 6.  [purescript-css](https://github.com/slamdata/purescript-css): A type-safe library for describing, manipulating, and rendering CSS.
 
 
-<a id="org54366b4"></a>
+<a id="org560fe5d"></a>
 
 ## PureScript + X
 
@@ -147,7 +138,7 @@ Install `ncurses5-compat-libs` from [AUR](https://aur.archlinux.org/packages/ncu
     1.  [Elm in Purescript](https://www.youtube.com/watch?v=O_kWwaghZ9U)
 
 
-<a id="org608e849"></a>
+<a id="orgeda8a96"></a>
 
 ## Interesting
 

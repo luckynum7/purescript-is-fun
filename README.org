@@ -76,10 +76,10 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
   4. [[https://pursuit.purescript.org/]]
   5. [[https://github.com/trending/purescript]]
 
-** Bundle (Preludes)
+# ** Bundle (Preludes)
 
-   1. [[https://github.com/tfausak/purescript-batteries][purescript-batteries]]: :battery: A PureScript prelude with more features.
-   2. [[https://github.com/purescript-contrib/purescript-base]]
+#    1. [[https://github.com/tfausak/purescript-batteries][purescript-batteries]]: :battery: A PureScript prelude with more features.
+#    2. [[https://github.com/purescript-contrib/purescript-base]]
 
 ** UI Libraries
 
