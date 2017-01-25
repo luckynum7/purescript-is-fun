@@ -1,14 +1,22 @@
 {
-  "private": true,
-  "scripts": {
-    "postinstall": "bower install",
-    "build": "pulp browserify --jobs 4 --optimise --to dist/app.js",
-    "watch": "pulp --watch browserify --jobs 4 --to dist/app.js"
-  },
-  "dependencies": {
-    "virtual-dom": "^2.1.1"
-  },
-  "devDependencies": {
-    "purescript-psa": "^0.4.0"
-  }
+    "private": true,
+    "scripts": {
+        "postinstall": "bower install",
+        "clean": "node -e \"var d='dist',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
+        "docs": "pulp docs",
+        "build": "webpack --progress --bail",
+        "dev": "webpack-dev-server --progress --inline --hot",
+        "-build:psc": "pulp browserify --jobs 4 --optimise --to dist/app.js",
+        "-watch:psc": "pulp --watch browserify --jobs 4 --to dist/app.js"
+    },
+    "dependencies": {
+        "virtual-dom": "^2.1.1"
+    },
+    "devDependencies": {
+        "fs-extra": "^2.0.0",
+        "purescript-psa": "^0.4.0",
+        "purs-loader": "^2.2.0",
+        "webpack": "^1.14.0",
+        "webpack-dev-server": "^1.16.2"
+    }
 }
