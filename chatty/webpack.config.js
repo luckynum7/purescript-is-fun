@@ -11,7 +11,7 @@ module.exports = {
         stats: 'errors-only'
     },
 
-    entry: './src/Main.purs',
+    entry: './src/Chatty.purs',
 
     output: {
         path: __dirname,

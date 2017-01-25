@@ -5,7 +5,7 @@
         "clean": "node -e \"var d='dist',fs=require('fs-extra');fs.emptydir(d,function(e){});\"",
         "docs": "pulp docs",
         "build": "webpack --progress --bail",
-        "dev": "webpack-dev-server --progress --inline --hot",
+        "dev": "webpack-dev-server --progress --hot --inline",
         "-build:psc": "pulp browserify --jobs 4 --optimise --to dist/app.js",
         "-watch:psc": "pulp --watch browserify --jobs 4 --to dist/app.js"
     },

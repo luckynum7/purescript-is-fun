@@ -1,4 +1,4 @@
-module Main where
+module Chatty.App (app) where
 
 import Prelude
 
@@ -41,7 +41,7 @@ ui = H.component { render, eval }
     H.modify (\state -> { on: not state.on })
     pure next
 
-main :: Eff (H.HalogenEffects ()) Unit
-main = runHalogenAff do
+app :: Eff (H.HalogenEffects ()) Unit
+app = runHalogenAff do
   body <- awaitBody
   H.runUI ui initialState body
