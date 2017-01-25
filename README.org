@@ -94,6 +94,13 @@ Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses
    5. [[https://github.com/zrho/purescript-optic-ui][purescript-optic-ui]]: PureScript UI framework based on lenses.
    6. [[https://github.com/slamdata/purescript-css][purescript-css]]: A type-safe library for describing, manipulating, and rendering CSS.
 
+** Routing
+
+   1. [[https://github.com/slamdata/purescript-routing][purescript-routing]]: A clean, type-safe routing library for PureScript.
+      1) [[https://github.com/slamdata/purescript-routing/blob/master/GUIDE.md][A Guide to purescript-routing]]
+      2) [[http://www.parsonsmatt.org/2015/10/22/purescript_router.html][Using purescript-routing with purescript-halogen]]
+         - [[https://github.com/parsonsmatt/purescript-routing-example][purescript-routing-example]]
+
 ** PureScript + X
 
    1. [[https://github.com/rgrempel/purescript-elm]] (*Elm*)
