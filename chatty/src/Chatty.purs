@@ -10,6 +10,6 @@ import Chatty.App (app)
 chatty :: Unit
 chatty = unsafePerformEff $ do
   app
-  -- hot
+--   hot
 
 -- foreign import hot :: forall eff. Eff eff Unit

@@ -1,7 +1,7 @@
-'use strict';
+// 'use strict';
 
-exports.hot = function() {
-    if (module.hot) {
-        module.hot.accept();
-    }
-};
+// exports.hot = function() {
+//     if (module.hot) {
+//         module.hot.accept();
+//     }
+// };
