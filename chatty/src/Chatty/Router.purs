@@ -7,17 +7,31 @@ import Control.Alt ((<|>))
 import Routing.Match (Match)
 import Routing.Match.Class (lit)
 
-data Routes = Welcome
-            | Chat
-            | Profile
+data Locations
+  = Dashboard -- "Home"
+  | Chat
+  | Profile
 
-routing :: Match Routes
-routing  = welcome
-           <|> chat
-           <|> profile
-  where
-    welcome = Welcome <$ lit ""
-    chat = Chat <$ route "chat"
-    profile = Profile <$ route "profile"
-    route str = lit "" *> lit str
+oneSlash :: Match Unit
+oneSlash = lit "/"
 
+homeSlash :: Match Unit
+homeSlash = lit ""
+
+route :: String -> Match Unit
+route str = homeSlash *> lit str
+
+dashboard :: Match Locations
+dashboard = Dashboard <$ oneSlash
+
+chat :: Match Locations
+chat = Chat <$ route "chat"
+
+profile :: Match Locations
+profile = Profile <$ route "profile"
+
+routing :: Match Locations
+routing  =
+  chat <|>
+  profile <|>
+  dashboard
