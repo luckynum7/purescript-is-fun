@@ -2,8 +2,7 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
-* [0/5] TODO
-  - [ ] Halogen routing
+* [0/4] TODO
   - [ ] Hello world w/ halogen
   - [ ] Routing
   - [ ] Routing -> View

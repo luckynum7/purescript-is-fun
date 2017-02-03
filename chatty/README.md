@@ -1,28 +1,27 @@
-- [<code>[0/5]</code> TODO](#orgd3a00d2)
-- [Development](#org2ee6f63)
-  - [How to setup environment](#org4b6cc51)
-  - [How to develop](#orgd01e872)
-  - [How to build](#org0c799bc)
+- [<code>[0/4]</code> TODO](#org520c305)
+- [Development](#orga2a22db)
+  - [How to setup environment](#org1ab85a3)
+  - [How to develop](#org78c49fa)
+  - [How to build](#org475ab88)
 
 
 
-<a id="orgd3a00d2"></a>
+<a id="org520c305"></a>
 
-# <code>[0/5]</code> TODO
+# <code>[0/4]</code> TODO
 
--   [ ] Halogen routing
 -   [ ] Hello world w/ halogen
 -   [ ] Routing
 -   [ ] Routing -> View
 -   [ ] Split routing into modules
 
 
-<a id="org2ee6f63"></a>
+<a id="orga2a22db"></a>
 
 # Development
 
 
-<a id="org4b6cc51"></a>
+<a id="org1ab85a3"></a>
 
 ## How to setup environment
 
@@ -31,7 +30,7 @@ npm install
 ```
 
 
-<a id="orgd01e872"></a>
+<a id="org78c49fa"></a>
 
 ## How to develop
 
@@ -40,7 +39,7 @@ npm run dev
 ```
 
 
-<a id="org0c799bc"></a>
+<a id="org475ab88"></a>
 
 ## How to build
 
