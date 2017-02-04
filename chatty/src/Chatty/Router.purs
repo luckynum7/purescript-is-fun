@@ -45,24 +45,24 @@ routing  =
   profile <|>
   dashboard
 
-component :: forall m. H.Component HH.HTML RouteQuery Unit Void m
-component =
-  H.component
-    { initialState: const initialState
-    , render
-    , eval
-    , receiver: const Nothing
-    }
-  where
+-- component :: forall m. H.Component HH.HTML RouteQuery Unit Void m
+-- component =
+--   H.component
+--     { initialState: const initialState
+--     , render
+--     , eval
+--     , receiver: const Nothing
+--     }
+--   where
 
-    initialState :: State
-    initialState = { currentPage: "" }
+--     initialState :: State
+--     initialState = { currentPage: "" }
 
-    render :: State -> H.ComponentHTML RouteQuery
-    render state =
-      HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
+--     render :: State -> H.ComponentHTML RouteQuery
+--     render state =
+--       HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
 
-    eval :: RouteQuery ~> H.ComponentDSL State RouteQuery Void m
-    eval (ChangeRoute next) = do
-        H.modify \st -> { currentPage: "" }
-        pure next
+--     eval :: RouteQuery ~> H.ComponentDSL State RouteQuery Void m
+--     eval (ChangeRoute next) = do
+--         H.modify \st -> { currentPage: "" }
+--         pure next
