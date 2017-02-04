@@ -1,31 +1,32 @@
-- [<code>[2/8]</code> TODO](#org504f7ee)
-- [Development](#orgdc1fa54)
-  - [How to setup environment](#org07b7504)
-  - [How to develop](#org3c7007c)
-  - [How to build](#org4db3e16)
+- [<code>[2/9]</code> TODO](#org7f93bf6)
+- [Development](#orgd0a3cca)
+  - [How to setup environment](#orgded7c7f)
+  - [How to develop](#org068c55c)
+  - [How to build](#org91d8eea)
 
 
 
-<a id="org504f7ee"></a>
+<a id="org7f93bf6"></a>
 
-# <code>[2/8]</code> TODO
+# <code>[2/9]</code> TODO
 
 -   [X] Search for halogen apps
 -   [X] Halogen multi-component, component, etc
 -   [ ] Hello world w/ halogen
 -   [ ] Hello world w/ component (in Router.purs)
 -   [ ] Hello world w/ Routing (in Dashboard.purs)
--   [ ] Routing
--   [ ] Routing -> View
+-   [ ] *Routing* w/ halogen
+-   [ ] purescript-routing
+-   [ ] purescript-routing -> view
 -   [ ] Split routing into modules
 
 
-<a id="orgdc1fa54"></a>
+<a id="orgd0a3cca"></a>
 
 # Development
 
 
-<a id="org07b7504"></a>
+<a id="orgded7c7f"></a>
 
 ## How to setup environment
 
@@ -34,7 +35,7 @@ npm install
 ```
 
 
-<a id="org3c7007c"></a>
+<a id="org068c55c"></a>
 
 ## How to develop
 
@@ -43,7 +44,7 @@ npm run dev
 ```
 
 
-<a id="org4db3e16"></a>
+<a id="org91d8eea"></a>
 
 ## How to build
 

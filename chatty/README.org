@@ -2,16 +2,17 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
-* [2/8] TODO
+* [2/9] TODO
   - [X] Search for halogen apps
   - [X] Halogen multi-component, component, etc
   - [ ] Hello world w/ halogen
   - [ ] Hello world w/ component (in Router.purs)
   - [ ] Hello world w/ Routing (in Dashboard.purs)
-  - [ ] Routing
-  - [ ] Routing -> View
+  - [ ] /Routing/ w/ halogen
+  - [ ] purescript-routing
+  - [ ] purescript-routing -> view
   - [ ] Split routing into modules
-
+    
 * Development
 
 ** How to setup environment
