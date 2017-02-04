@@ -1,11 +1,15 @@
 module Chatty.Router where
 
 import Prelude
-import Halogen as H
-import Halogen.HTML as HH
+
 import Control.Alt ((<|>))
 import Control.Monad.State (State)
+
 import Data.Maybe (Maybe(..))
+
+import Halogen as H
+import Halogen.HTML as HH
+
 import Routing.Match (Match)
 import Routing.Match.Class (lit)
 
