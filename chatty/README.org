@@ -2,11 +2,11 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
-* [3/9] TODO
-  - [X] Search for halogen apps
-  - [X] Halogen multi-component, component, etc
+* [4/9] TODO
+  - [X] +Search for halogen apps+
+  - [X] +Halogen multi-component, component, etc+
   - [X] Hello world w/ halogen
-  - [ ] Hello world w/ component (in Router.purs)
+  - [X] Hello world w/ component (in Router.purs)
   - [ ] Hello world w/ Routing (in Dashboard.purs)
   - [ ] /Routing/ w/ halogen
   - [ ] purescript-routing
