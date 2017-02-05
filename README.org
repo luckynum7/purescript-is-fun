@@ -2,9 +2,64 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
+* References
+
+  1. [[http://www.purescript.org/]]
+  2. [[https://leanpub.com/purescript][/PureScript by Example/]] by Phil Freeman
+     1) [[https://github.com/purescript]]
+     2) [[https://github.com/purescript-node]]
+     3) [[https://github.com/purescript-contrib]]
+  3. [[https://github.com/paf31/24-days-of-purescript-2016][/24 Days of PureScript, 2016/]]
+  4. [[https://github.com/passy/awesome-purescript][Awesome PureScript]]
+  5. [[https://github.com/xgrommx/purescript-ecosystem][PureScript ecosystem]]
+  6. [[https://pursuit.purescript.org][Pursuit]] is the home of PureScript documentation
+  7. [[https://github.com/trending/purescript][GitHub Trending]]
+
+# ** Bundle (Preludes)
+
+#    1. [[https://github.com/tfausak/purescript-batteries][purescript-batteries]]: :battery: A PureScript prelude with more features.
+#    2. [[https://github.com/purescript-contrib/purescript-base]]
+
+** UI Libraries
+
+   1. [[https://github.com/slamdata/purescript-halogen][purescript-halogen]]: A declarative, type-safe UI library for PureScript.
+      1) [[https://github.com/slamdata/purescript-halogen-template]]
+   2. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to *React*. [[https://www.purescript-pux.org/]]
+      1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
+         - Slides: [[http://purescript-react-rally.surge.sh/]]
+         - Source: [[https://github.com/spicydonuts/purescript-spectacle-presentation]]
+   3. [[https://github.com/paf31/purescript-thermite][purescript-thermite]]: A simple PureScript wrapper for *React*.
+   4. [[https://github.com/sharkdp/purescript-flare][purescript-flare]]: A special-purpose UI library for Purescript.
+   5. [[https://github.com/zrho/purescript-optic-ui][purescript-optic-ui]]: PureScript UI framework based on lenses.
+   6. [[https://github.com/slamdata/purescript-css][purescript-css]]: A type-safe library for describing, manipulating, and rendering CSS.
+
+** Routing
+
+   1. [[https://github.com/slamdata/purescript-routing][purescript-routing]]: A clean, type-safe routing library for PureScript.
+      1) [[https://github.com/slamdata/purescript-routing/blob/master/GUIDE.md][A Guide to purescript-routing]]
+      2) [[http://www.parsonsmatt.org/2015/10/22/purescript_router.html][Using purescript-routing with purescript-halogen]]
+         - [[https://github.com/parsonsmatt/purescript-routing-example][purescript-routing-example]]
+
+** PureScript + X
+
+   1. [[https://github.com/rgrempel/purescript-elm]] (*Elm*)
+      1) [[https://www.youtube.com/watch?v=O_kWwaghZ9U][Elm in Purescript]]
+   2. [[https://github.com/ruicc/purescript-vue]] (*Vue.js*)
+   3. [[https://github.com/justinwoo/purescript-cycle-run]] (*Cycle.js*, xstream)
+   4. [[https://github.com/justinwoo/purescript-xstream]] (*xstream*)
+   5. [[https://github.com/TylorS/purescript-cycle]] (Cycle.js)
+   6. [[https://github.com/zudov/purescript-cycle]] (Cycle.js)
+
+** Interesting
+
+   1. [[https://github.com/purescript/purescript-generics][purescript-generics]]: Generic programming.
+   2. [[https://github.com/osener/wring][wring]]: Extract content from webpages using CSS Selectors, XPath, and JS expressions. (phantomjs)
+
 * Development
 
 ** Preparation
+
+*** Prerequisites
 
    1. nodejs
    2. purescript
@@ -64,50 +119,3 @@ pulp psci
 *** Missing ~libtinfo.so.5~
 
 Install ~ncurses5-compat-libs~ from [[https://aur.archlinux.org/packages/ncurses5-compat-libs/][AUR]]
-
-* References
-
-  1. [[http://www.purescript.org/]]
-  2. [[https://leanpub.com/purescript][/PureScript by Example/]] by Phil Freeman
-     1) [[https://github.com/purescript]]
-     2) [[https://github.com/purescript-node]]
-     3) [[https://github.com/purescript-contrib]]
-  3. [[https://github.com/paf31/24-days-of-purescript-2016][/24 Days of PureScript, 2016/]]
-  4. [[https://github.com/passy/awesome-purescript][Awesome Purescript]]
-  5. [[https://pursuit.purescript.org][Pursuit]] is the home of PureScript documentation
-  6. [[https://github.com/trending/purescript][GitHub Trending]]
-
-# ** Bundle (Preludes)
-
-#    1. [[https://github.com/tfausak/purescript-batteries][purescript-batteries]]: :battery: A PureScript prelude with more features.
-#    2. [[https://github.com/purescript-contrib/purescript-base]]
-
-** UI Libraries
-
-   1. [[https://github.com/slamdata/purescript-halogen][purescript-halogen]]: A declarative, type-safe UI library for PureScript.
-      1) [[https://github.com/slamdata/purescript-halogen-template]]
-   2. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to *React*. [[https://www.purescript-pux.org/]]
-      1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
-         - Slides: [[http://purescript-react-rally.surge.sh/]]
-         - Source: [[https://github.com/spicydonuts/purescript-spectacle-presentation]]
-   3. [[https://github.com/paf31/purescript-thermite][purescript-thermite]]: A simple PureScript wrapper for *React*.
-   4. [[https://github.com/sharkdp/purescript-flare][purescript-flare]]: A special-purpose UI library for Purescript.
-   5. [[https://github.com/zrho/purescript-optic-ui][purescript-optic-ui]]: PureScript UI framework based on lenses.
-   6. [[https://github.com/slamdata/purescript-css][purescript-css]]: A type-safe library for describing, manipulating, and rendering CSS.
-
-** Routing
-
-   1. [[https://github.com/slamdata/purescript-routing][purescript-routing]]: A clean, type-safe routing library for PureScript.
-      1) [[https://github.com/slamdata/purescript-routing/blob/master/GUIDE.md][A Guide to purescript-routing]]
-      2) [[http://www.parsonsmatt.org/2015/10/22/purescript_router.html][Using purescript-routing with purescript-halogen]]
-         - [[https://github.com/parsonsmatt/purescript-routing-example][purescript-routing-example]]
-
-** PureScript + X
-
-   1. [[https://github.com/rgrempel/purescript-elm]] (*Elm*)
-      1) [[https://www.youtube.com/watch?v=O_kWwaghZ9U][Elm in Purescript]]
-
-** Interesting
-
-   1. [[https://github.com/purescript/purescript-generics][purescript-generics]]: Generic programming.
-   2. [[https://github.com/osener/wring][wring]]: Extract content from webpages using CSS Selectors, XPath, and JS expressions. (phantomjs)
