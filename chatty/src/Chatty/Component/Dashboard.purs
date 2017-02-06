@@ -1,16 +1,21 @@
 module Chatty.Component.Dashboard where
 
 import Prelude
-
 import Data.Maybe (Maybe(..))
-
 import Halogen as H
 import Halogen.HTML as HH
 
-data Query a
-  = ChangeRoute a
-
 type State = { currentPage :: String }
+
+initialState :: State
+initialState = { currentPage: "" }
+
+data Query a
+  = NoOp a
+
+data Slot = Slot
+derive instance eqSlot :: Eq Slot
+derive instance ordSlot :: Ord Slot
 
 component :: forall m. H.Component HH.HTML Query Unit Void m
 component =
@@ -22,14 +27,11 @@ component =
     }
   where
 
-    initialState :: State
-    initialState = { currentPage: "" }
-
     render :: State -> H.ComponentHTML Query
     render state =
       HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
 
     eval :: Query ~> H.ComponentDSL State Query Void m
-    eval (ChangeRoute next) = do
+    eval (NoOp next) = do
         H.modify \st -> { currentPage: "" }
         pure next

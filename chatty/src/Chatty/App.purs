@@ -12,4 +12,4 @@ import Chatty.Router as Router
 app :: Eff (HA.HalogenEffects ()) Unit
 app = HA.runHalogenAff do
   body <- HA.awaitBody
-  runUI Router.component unit body
+  runUI Router.ui unit body

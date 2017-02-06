@@ -1,18 +1,23 @@
 module Chatty.Component.Profile where
 
 import Prelude
-
 import Data.Maybe (Maybe(..))
-
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
 
-data Query a = ToggleState a
-
 type State = { on :: Boolean }
 
-component :: forall g. H.Component HH.HTML Query Unit Void g
+initialState :: State
+initialState = { on: false }
+
+data Query a = ToggleState a
+
+data Slot = Slot
+derive instance eqSlot :: Eq Slot
+derive instance ordSlot :: Ord Slot
+
+component :: forall m. H.Component HH.HTML Query Unit Void m
 component =
   H.component
     { initialState: const initialState
@@ -21,9 +26,6 @@ component =
     , receiver: const Nothing
     }
   where
-
-    initialState :: State
-    initialState = { on: false }
 
     render :: State -> H.ComponentHTML Query
     render state =
@@ -41,7 +43,7 @@ component =
         ]
       ]
 
-    eval :: Query ~> H.ComponentDSL State Query Void g
+    eval :: Query ~> H.ComponentDSL State Query Void m
     eval (ToggleState next) = do
       H.modify (\state -> { on: not state.on })
       pure next

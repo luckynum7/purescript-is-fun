@@ -1,15 +1,13 @@
 module Chatty.Router where
 
 import Prelude
-
--- import Control.Alt ((<|>))
-import Data.Maybe (Maybe(..))
-
+import Chatty.Component.Dashboard as Dashboard
+import Chatty.Component.Profile as Profile
 import Halogen as H
 import Halogen.HTML as HH
-
--- import Routing.Match (Match)
--- import Routing.Match.Class (lit)
+import Data.Either (Either)
+import Data.Functor.Coproduct (Coproduct)
+import Data.Maybe (Maybe(..))
 
 -- data Locations
 --   = Dashboard -- "Home"
@@ -41,14 +39,20 @@ import Halogen.HTML as HH
 --   dashboard
 
 
+type State = { currentPage :: String }
+
+initialState :: State
+initialState = { currentPage: "" }
+
 data RouteQuery a
   = ChangeRoute a
 
-type State = { currentPage :: String }
+type ChildQuery = Coproduct Dashboard.Query Profile.Query
+type ChildSlot = Either Dashboard.Slot Profile.Slot
 
-component :: forall m. H.Component HH.HTML RouteQuery Unit Void m
-component =
-  H.component
+ui :: forall m. Applicative m => H.Component HH.HTML RouteQuery Unit Void m
+ui =
+  H.parentComponent
     { initialState: const initialState
     , render
     , eval
@@ -56,14 +60,11 @@ component =
     }
   where
 
-    initialState :: State
-    initialState = { currentPage: "" }
-
-    render :: State -> H.ComponentHTML RouteQuery
+    render :: State -> H.ParentHTML RouteQuery ChildQuery ChildSlot m
     render state =
       HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
 
-    eval :: RouteQuery ~> H.ComponentDSL State RouteQuery Void m
+    eval :: RouteQuery ~> H.ParentDSL State RouteQuery ChildQuery ChildSlot Void m
     eval (ChangeRoute next) = do
         H.modify \st -> { currentPage: "" }
         pure next
