@@ -8,7 +8,14 @@
   - [X] Hello world w/ halogen
   - [X] Hello world w/ component (in Router.purs)
   - [ ] Hello world w/ Routing (in Dashboard.purs)
-    - [ ] component in component (/3 layers/)
+    - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/components]]
+    - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/driver-routing]] (~hashchange~)
+    - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/higher-order-components]]
+    - https://github.com/slamdata/purescript-halogen/tree/master/examples/lifecycle
+    - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/multi-component]]
+    - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/todo]]
+    - [ ] component in parentComponent
+    - [ ] multi-component in parentComponent
     - [ ] change view in ~render~ function
   - [ ] persist states (e.g. user, etc)
   - [ ] /Routing/ w/ halogen

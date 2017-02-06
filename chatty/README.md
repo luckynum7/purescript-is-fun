@@ -1,12 +1,12 @@
-- [<code>[4/10]</code> TODO](#org42560f1)
-- [Development](#org0788406)
-  - [How to setup environment](#orgaa98cf4)
-  - [How to develop](#orgb639a07)
-  - [How to build](#org23c1147)
+- [<code>[4/10]</code> TODO](#orgf165c73)
+- [Development](#orgd8ebf7f)
+  - [How to setup environment](#orgcb2303d)
+  - [How to develop](#org7ee12f8)
+  - [How to build](#orgcdbbaf2)
 
 
 
-<a id="org42560f1"></a>
+<a id="orgf165c73"></a>
 
 # <code>[4/10]</code> TODO
 
@@ -15,7 +15,14 @@
 -   [X] Hello world w/ halogen
 -   [X] Hello world w/ component (in Router.purs)
 -   [ ] Hello world w/ Routing (in Dashboard.purs)
-    -   [ ] component in component (*3 layers*)
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/components>
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/driver-routing> (`hashchange`)
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/higher-order-components>
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/lifecycle>
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/multi-component>
+    -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/todo>
+    -   [ ] component in parentComponent
+    -   [ ] multi-component in parentComponent
     -   [ ] change view in `render` function
 -   [ ] persist states (e.g. user, etc)
 -   [ ] *Routing* w/ halogen
@@ -24,12 +31,12 @@
 -   [ ] Split routing into modules
 
 
-<a id="org0788406"></a>
+<a id="orgd8ebf7f"></a>
 
 # Development
 
 
-<a id="orgaa98cf4"></a>
+<a id="orgcb2303d"></a>
 
 ## How to setup environment
 
@@ -38,7 +45,7 @@ npm install
 ```
 
 
-<a id="orgb639a07"></a>
+<a id="org7ee12f8"></a>
 
 ## How to develop
 
@@ -47,7 +54,7 @@ npm run dev
 ```
 
 
-<a id="org23c1147"></a>
+<a id="orgcdbbaf2"></a>
 
 ## How to build
 
