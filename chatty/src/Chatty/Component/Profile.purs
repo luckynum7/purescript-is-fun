@@ -32,8 +32,8 @@ component =
     render :: State -> H.ComponentHTML Query
     render state =
       HH.div_
-      [ HH.h1_
-        [ HH.text "Hello world!" ]
+      [ HH.h2_
+        [ HH.text "Profile" ]
       , HH.p_
         [ HH.text "Why not toggle this button:" ]
       , HH.button

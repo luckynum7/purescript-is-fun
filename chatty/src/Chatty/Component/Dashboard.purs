@@ -31,7 +31,7 @@ component =
 
     render :: State -> H.ComponentHTML Query
     render state =
-      HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
+      HH.div_ [ HH.h2_ [ HH.text "Dashboard" ] ]
 
     eval :: Query ~> H.ComponentDSL State Query Void m
     eval (NoOp next) = do

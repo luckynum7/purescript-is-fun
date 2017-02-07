@@ -66,7 +66,7 @@ ui =
 
     render :: State -> H.ParentHTML RouteQuery ChildQuery ChildSlot m
     render state = HH.div_
-      [ HH.p_ [ HH.text "Hello World!" ]
+      [ HH.h1_ [ HH.text "Hello World!" ]
       , HH.div_ [ HH.slot' CP.cp1 Dashboard.Slot Dashboard.component unit absurd ]
       , HH.div_ [ HH.slot' CP.cp2 Profile.Slot Profile.component unit absurd ]
       ]
