@@ -2,6 +2,7 @@ module Chatty.Router where
 
 import Prelude
 
+import Control.Alt ((<|>))
 import Data.Const (Const)
 import Data.Maybe (Maybe(..))
 
@@ -10,37 +11,40 @@ import Halogen.Component.ChildPath (type (\/), type (<\/>))
 import Halogen.Component.ChildPath as CP
 import Halogen.HTML as HH
 
+import Routing.Match (Match)
+import Routing.Match.Class (lit)
+
 import Chatty.Component.Dashboard as Dashboard
 import Chatty.Component.Profile as Profile
 
--- data Locations
---   = Dashboard -- "Home"
---   | Chat
---   | Profile
+data Locations
+  = Dashboard -- "Home"
+  | Chat
+  | Profile
 
--- oneSlash :: Match Unit
--- oneSlash = lit "/"
+oneSlash :: Match Unit
+oneSlash = lit "/"
 
--- homeSlash :: Match Unit
--- homeSlash = lit ""
+homeSlash :: Match Unit
+homeSlash = lit ""
 
--- route :: String -> Match Unit
--- route str = homeSlash *> lit str
+route :: String -> Match Unit
+route str = homeSlash *> lit str
 
--- dashboard :: Match Locations
--- dashboard = Dashboard <$ oneSlash
+dashboard :: Match Locations
+dashboard = Dashboard <$ oneSlash
 
--- chat :: Match Locations
--- chat = Chat <$ route "chat"
+chat :: Match Locations
+chat = Chat <$ route "chat"
 
--- profile :: Match Locations
--- profile = Profile <$ route "profile"
+profile :: Match Locations
+profile = Profile <$ route "profile"
 
--- routing :: Match Locations
--- routing  =
---   chat <|>
---   profile <|>
---   dashboard
+routing :: Match Locations
+routing  =
+  chat <|>
+  profile <|>
+  dashboard
 
 
 type State = { currentPage :: String }
