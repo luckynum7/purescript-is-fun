@@ -1,13 +1,18 @@
 module Chatty.Router where
 
 import Prelude
-import Chatty.Component.Dashboard as Dashboard
-import Chatty.Component.Profile as Profile
-import Halogen as H
-import Halogen.HTML as HH
+
 import Data.Either (Either)
 import Data.Functor.Coproduct (Coproduct)
 import Data.Maybe (Maybe(..))
+
+import Halogen as H
+import Halogen.Component.ChildPath (type (\/), type (<\/>))
+import Halogen.Component.ChildPath as CP
+import Halogen.HTML as HH
+
+import Chatty.Component.Dashboard as Dashboard
+import Chatty.Component.Profile as Profile
 
 -- data Locations
 --   = Dashboard -- "Home"
@@ -47,8 +52,8 @@ initialState = { currentPage: "" }
 data RouteQuery a
   = ChangeRoute a
 
-type ChildQuery = Coproduct Dashboard.Query Profile.Query
-type ChildSlot = Either Dashboard.Slot Profile.Slot
+type ChildQuery = Dashboard.Query <\/> Profile.Query
+type ChildSlot = Dashboard.Slot \/ Profile.Slot
 
 ui :: forall m. Applicative m => H.Component HH.HTML RouteQuery Unit Void m
 ui =
@@ -61,8 +66,11 @@ ui =
   where
 
     render :: State -> H.ParentHTML RouteQuery ChildQuery ChildSlot m
-    render state =
-      HH.div_ [ HH.p_ [ HH.text "Hello world!" ] ]
+    render state = HH.div_
+      [ HH.p_ [ HH.text "Hello World!" ]
+      , HH.div_ [ HH.slot' CP.cp1 Dashboard.Slot Dashboard.component unit absurd ]
+      -- , HH.div_ [ HH.slot' CP.cp2 Profile.Slot Profile.component unit absurd ]
+      ]
 
     eval :: RouteQuery ~> H.ParentDSL State RouteQuery ChildQuery ChildSlot Void m
     eval (ChangeRoute next) = do
