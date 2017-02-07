@@ -2,12 +2,12 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
-* [4/10] TODO
+* [8/11] TODO
   - [X] +Search for halogen apps+
   - [X] +Halogen multi-component, component, etc+
   - [X] Hello world w/ halogen
   - [X] Hello world w/ component (in Router.purs)
-  - [-] Hello world w/ Routing (in Dashboard.purs)
+  - [X] Hello world w/ Routing (in Dashboard.purs)
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/components]]
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/driver-routing]] (~hashchange~)
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/higher-order-components]]
@@ -16,12 +16,14 @@
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/todo]]
     - [X] component in parentComponent
     - [X] multi-component in parentComponent
-    - [ ] change view in ~render~ function
-  - [ ] persist states (e.g. user, etc)
-  - [ ] /Routing/ w/ halogen
-  - [ ] purescript-routing
+  - [X] +/Routing/ w/ halogen+
+  - [X] +change view in ~render~ function (~hashChange~)+
+  - [X] purescript-routing
   - [ ] purescript-routing -> view
+    - [ ] renderView <- which page (purescript-routing)
   - [ ] Split routing into modules
+    - [ ] get state from hash (purescript-routing)
+  - [ ] persist states (e.g. user, etc)
     
 * Development
 

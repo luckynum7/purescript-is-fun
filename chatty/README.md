@@ -1,20 +1,20 @@
-- [<code>[4/10]</code> TODO](#org56090f2)
-- [Development](#org2a9d398)
-  - [How to setup environment](#org330937c)
-  - [How to develop](#org8080236)
-  - [How to build](#org9f56162)
+- [<code>[8/11]</code> TODO](#org09a2435)
+- [Development](#org9486cfd)
+  - [How to setup environment](#org84ab53d)
+  - [How to develop](#orga059cad)
+  - [How to build](#org898813c)
 
 
 
-<a id="org56090f2"></a>
+<a id="org09a2435"></a>
 
-# <code>[4/10]</code> TODO
+# <code>[8/11]</code> TODO
 
 -   [X] ~~Search for halogen apps~~
 -   [X] ~~Halogen multi-component, component, etc~~
 -   [X] Hello world w/ halogen
 -   [X] Hello world w/ component (in Router.purs)
--   [-] Hello world w/ Routing (in Dashboard.purs)
+-   [X] Hello world w/ Routing (in Dashboard.purs)
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/components>
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/driver-routing> (`hashchange`)
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/higher-order-components>
@@ -23,20 +23,22 @@
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/todo>
     -   [X] component in parentComponent
     -   [X] multi-component in parentComponent
-    -   [ ] change view in `render` function
--   [ ] persist states (e.g. user, etc)
--   [ ] *Routing* w/ halogen
--   [ ] purescript-routing
+-   [X] ~~*Routing* w/ halogen~~
+-   [X] ~~change view in `render` function (`hashChange`)~~
+-   [X] purescript-routing
 -   [ ] purescript-routing -> view
+    -   [ ] renderView <- which page (purescript-routing)
 -   [ ] Split routing into modules
+    -   [ ] get state from hash (purescript-routing)
+-   [ ] persist states (e.g. user, etc)
 
 
-<a id="org2a9d398"></a>
+<a id="org9486cfd"></a>
 
 # Development
 
 
-<a id="org330937c"></a>
+<a id="org84ab53d"></a>
 
 ## How to setup environment
 
@@ -45,7 +47,7 @@ npm install
 ```
 
 
-<a id="org8080236"></a>
+<a id="orga059cad"></a>
 
 ## How to develop
 
@@ -54,7 +56,7 @@ npm run dev
 ```
 
 
-<a id="org9f56162"></a>
+<a id="org898813c"></a>
 
 ## How to build
 
