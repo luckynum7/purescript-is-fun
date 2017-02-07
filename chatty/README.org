@@ -15,7 +15,7 @@
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/multi-component]]
     - [[https://github.com/slamdata/purescript-halogen/tree/master/examples/todo]]
     - [X] component in parentComponent
-    - [ ] multi-component in parentComponent
+    - [X] multi-component in parentComponent
     - [ ] change view in ~render~ function
   - [ ] persist states (e.g. user, etc)
   - [ ] /Routing/ w/ halogen

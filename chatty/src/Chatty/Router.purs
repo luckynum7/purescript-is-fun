@@ -2,8 +2,7 @@ module Chatty.Router where
 
 import Prelude
 
-import Data.Either (Either)
-import Data.Functor.Coproduct (Coproduct)
+import Data.Const (Const)
 import Data.Maybe (Maybe(..))
 
 import Halogen as H
@@ -52,8 +51,8 @@ initialState = { currentPage: "" }
 data RouteQuery a
   = ChangeRoute a
 
-type ChildQuery = Dashboard.Query <\/> Profile.Query
-type ChildSlot = Dashboard.Slot \/ Profile.Slot
+type ChildQuery = Dashboard.Query <\/> Profile.Query <\/> Const Void
+type ChildSlot = Dashboard.Slot \/ Profile.Slot \/ Void
 
 ui :: forall m. Applicative m => H.Component HH.HTML RouteQuery Unit Void m
 ui =
@@ -69,7 +68,7 @@ ui =
     render state = HH.div_
       [ HH.p_ [ HH.text "Hello World!" ]
       , HH.div_ [ HH.slot' CP.cp1 Dashboard.Slot Dashboard.component unit absurd ]
-      -- , HH.div_ [ HH.slot' CP.cp2 Profile.Slot Profile.component unit absurd ]
+      , HH.div_ [ HH.slot' CP.cp2 Profile.Slot Profile.component unit absurd ]
       ]
 
     eval :: RouteQuery ~> H.ParentDSL State RouteQuery ChildQuery ChildSlot Void m

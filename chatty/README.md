@@ -1,12 +1,12 @@
-- [<code>[4/10]</code> TODO](#org60be0f5)
-- [Development](#org8464663)
-  - [How to setup environment](#orgad28c74)
-  - [How to develop](#org5eb572d)
-  - [How to build](#orgba56037)
+- [<code>[4/10]</code> TODO](#org56090f2)
+- [Development](#org2a9d398)
+  - [How to setup environment](#org330937c)
+  - [How to develop](#org8080236)
+  - [How to build](#org9f56162)
 
 
 
-<a id="org60be0f5"></a>
+<a id="org56090f2"></a>
 
 # <code>[4/10]</code> TODO
 
@@ -22,7 +22,7 @@
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/multi-component>
     -   <https://github.com/slamdata/purescript-halogen/tree/master/examples/todo>
     -   [X] component in parentComponent
-    -   [ ] multi-component in parentComponent
+    -   [X] multi-component in parentComponent
     -   [ ] change view in `render` function
 -   [ ] persist states (e.g. user, etc)
 -   [ ] *Routing* w/ halogen
@@ -31,12 +31,12 @@
 -   [ ] Split routing into modules
 
 
-<a id="org8464663"></a>
+<a id="org2a9d398"></a>
 
 # Development
 
 
-<a id="orgad28c74"></a>
+<a id="org330937c"></a>
 
 ## How to setup environment
 
@@ -45,7 +45,7 @@ npm install
 ```
 
 
-<a id="org5eb572d"></a>
+<a id="org8080236"></a>
 
 ## How to develop
 
@@ -54,7 +54,7 @@ npm run dev
 ```
 
 
-<a id="orgba56037"></a>
+<a id="org9f56162"></a>
 
 ## How to build
 
