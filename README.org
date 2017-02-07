@@ -37,7 +37,7 @@
 
 ** Routing
 
-   1. [[https://github.com/slamdata/purescript-routing][purescript-routing]]: A clean, type-safe routing library for PureScript.
+   1. [[https://github.com/slamdata/purescript-routing][purescript-routing]]: A clean, type-safe routing library for PureScript. (~hash~)
       1) [[https://github.com/slamdata/purescript-routing/blob/master/GUIDE.md][A Guide to purescript-routing]]
       2) [[http://www.parsonsmatt.org/2015/10/22/purescript_router.html][Using purescript-routing with purescript-halogen]]
          - [[https://github.com/parsonsmatt/purescript-routing-example][purescript-routing-example]]
