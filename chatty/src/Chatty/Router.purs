@@ -1,19 +1,20 @@
 module Chatty.Router where
 
 import Prelude
-
 import Control.Alt ((<|>))
+import Control.Coroutine as CR
+import Control.Monad.Aff (Aff)
+import Control.Monad.Aff.AVar (AVAR)
 import Data.Const (Const)
 import Data.Maybe (Maybe(..))
-
+import DOM (DOM)
+import DOM.HTML.Event.Types (HashChangeEvent) as DOM
 import Halogen as H
 import Halogen.Component.ChildPath (type (\/), type (<\/>))
-import Halogen.Component.ChildPath as CP
+import Halogen.Component.ChildPath  as CP
 import Halogen.HTML as HH
-
 import Routing.Match (Match)
 import Routing.Match.Class (lit)
-
 import Chatty.Component.Dashboard as Dashboard
 import Chatty.Component.Profile as Profile
 
@@ -46,6 +47,10 @@ routing  =
   profile <|>
   dashboard
 
+-- routeProducer
+--   :: forall eff. CR.Producer DOM.HashChangeEvent (Aff (avar :: AVAR, dom :: DOM | eff)) Unit
+-- routeProducer  = ?routeProducer
+-- routeConsumer
 
 type State = { currentPage :: String }
 
