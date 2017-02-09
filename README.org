@@ -26,6 +26,7 @@
       1) [[https://github.com/slamdata/purescript-halogen-template]]
       2) [[https://github.com/slamdata/purescript-halogen/blob/master/examples]]
          - [[https://github.com/slamdata/purescript-halogen/blob/master/examples/higher-order-components][examples/higher-order-components]]
+      3) [[https://github.com/slamdata/slamdata]] (example)
    2. [[https://github.com/alexmingoia/purescript-pux][purescript-pux]]: A PureScript interface to *React*. [[https://www.purescript-pux.org/]]
       1) [[https://www.youtube.com/watch?v=MvAiOTJNLNQ][Michael Trotter - PureScript & Pux -- a safer, more expressive way to React]]
          - Slides: [[http://purescript-react-rally.surge.sh/]]

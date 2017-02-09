@@ -2,6 +2,28 @@
 #+OPTIONS:    ^:{}
 #+REPOSITORY: https://github.com/luckynum7/purescript-is-fun
 
+* Development
+
+** How to setup environment
+
+#+BEGIN_SRC bash
+npm install
+#+END_SRC
+
+** How to develop
+
+#+BEGIN_SRC bash
+npm run dev
+#+END_SRC
+
+** How to build
+
+#+BEGIN_SRC bash
+npm run build
+#+END_SRC
+
+The code will be built as ~bundle.js~, runnable by opening the ~index.html~
+
 * [8/11] TODO
   - [X] +Search for halogen apps+
   - [X] +Halogen multi-component, component, etc+
@@ -24,25 +46,3 @@
   - [ ] Split routing into modules
     - [ ] get state from hash (purescript-routing)
   - [ ] persist states (e.g. user, etc)
-    
-* Development
-
-** How to setup environment
-
-#+BEGIN_SRC bash
-npm install
-#+END_SRC
-
-** How to develop
-
-#+BEGIN_SRC bash
-npm run dev
-#+END_SRC
-
-** How to build
-
-#+BEGIN_SRC bash
-npm run build
-#+END_SRC
-
-The code will be built as ~bundle.js~, runnable by opening the ~index.html~

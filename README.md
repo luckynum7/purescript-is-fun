@@ -1,21 +1,21 @@
-- [References](#orgf0fe313)
-  - [UI Libraries](#orge59cb1d)
-  - [Routing](#orgfe496ca)
-  - [PureScript + X](#orgca0f8d7)
-  - [Interesting](#org05c4b61)
-- [Development](#orgb86eca4)
-  - [Preparation](#orgc1d3e5d)
-    - [Prerequisites](#org18d9f0c)
-    - [Installing the Compiler](#orgcadb0f8)
-    - [Setting up the Development Environment](#org44c5ad2)
-    - [Create project](#orgd94dc6d)
-    - [Working in `PSCi`](#orgab4eeee)
-  - [Troubleshooting](#org77bac5c)
-    - [Missing `libtinfo.so.5`](#orgf873747)
+- [References](#org78241ea)
+  - [UI Libraries](#orgb24e665)
+  - [Routing](#org3adfa49)
+  - [PureScript + X](#org07073fe)
+  - [Interesting](#org3f41b36)
+- [Development](#orgb294ab2)
+  - [Preparation](#orgf00b18c)
+    - [Prerequisites](#org269f57e)
+    - [Installing the Compiler](#org7a87a58)
+    - [Setting up the Development Environment](#orgd0f4d1f)
+    - [Create project](#org122aa9f)
+    - [Working in `PSCi`](#org6e28ec9)
+  - [Troubleshooting](#org875b80f)
+    - [Missing `libtinfo.so.5`](#org4905ab0)
 
 
 
-<a id="orgf0fe313"></a>
+<a id="org78241ea"></a>
 
 # References
 
@@ -31,7 +31,7 @@
 7.  [GitHub Trending](https://github.com/trending/purescript)
 
 
-<a id="orge59cb1d"></a>
+<a id="orgb24e665"></a>
 
 ## UI Libraries
 
@@ -39,6 +39,7 @@
     1.  <https://github.com/slamdata/purescript-halogen-template>
     2.  <https://github.com/slamdata/purescript-halogen/blob/master/examples>
         -   [examples/higher-order-components](https://github.com/slamdata/purescript-halogen/blob/master/examples/higher-order-components)
+    3.  <https://github.com/slamdata/slamdata> (example)
 2.  [purescript-pux](https://github.com/alexmingoia/purescript-pux): A PureScript interface to **React**. <https://www.purescript-pux.org/>
     1.  [Michael Trotter - PureScript & Pux &#x2013; a safer, more expressive way to React](https://www.youtube.com/watch?v=MvAiOTJNLNQ)
         -   Slides: <http://purescript-react-rally.surge.sh/>
@@ -49,7 +50,7 @@
 6.  [purescript-css](https://github.com/slamdata/purescript-css): A type-safe library for describing, manipulating, and rendering CSS.
 
 
-<a id="orgfe496ca"></a>
+<a id="org3adfa49"></a>
 
 ## Routing
 
@@ -62,7 +63,7 @@
         -   [Workspace.purs](https://github.com/slamdata/slamdata/blob/master/src/SlamData/Workspace.purs)
 
 
-<a id="orgca0f8d7"></a>
+<a id="org07073fe"></a>
 
 ## PureScript + X
 
@@ -75,7 +76,7 @@
 6.  <https://github.com/zudov/purescript-cycle> (Cycle.js)
 
 
-<a id="org05c4b61"></a>
+<a id="org3f41b36"></a>
 
 ## Interesting
 
@@ -83,17 +84,17 @@
 2.  [wring](https://github.com/osener/wring): Extract content from webpages using CSS Selectors, XPath, and JS expressions. (phantomjs)
 
 
-<a id="orgb86eca4"></a>
+<a id="orgb294ab2"></a>
 
 # Development
 
 
-<a id="orgc1d3e5d"></a>
+<a id="orgf00b18c"></a>
 
 ## Preparation
 
 
-<a id="org18d9f0c"></a>
+<a id="org269f57e"></a>
 
 ### Prerequisites
 
@@ -101,7 +102,7 @@
 2.  purescript
 
 
-<a id="orgcadb0f8"></a>
+<a id="org7a87a58"></a>
 
 ### Installing the Compiler
 
@@ -134,7 +135,7 @@ $ npm install -g purescript
 ```
 
 
-<a id="org44c5ad2"></a>
+<a id="orgd0f4d1f"></a>
 
 ### Setting up the Development Environment
 
@@ -143,7 +144,7 @@ $ npm install -g pulp bower
 ```
 
 
-<a id="orgd94dc6d"></a>
+<a id="org122aa9f"></a>
 
 ### Create project
 
@@ -152,7 +153,7 @@ $ pulp init
 ```
 
 
-<a id="orgab4eeee"></a>
+<a id="org6e28ec9"></a>
 
 ### Working in `PSCi`
 
@@ -161,12 +162,12 @@ $ pulp psci
 ```
 
 
-<a id="org77bac5c"></a>
+<a id="org875b80f"></a>
 
 ## Troubleshooting
 
 
-<a id="orgf873747"></a>
+<a id="org4905ab0"></a>
 
 ### Missing `libtinfo.so.5`
 

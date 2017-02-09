@@ -1,12 +1,46 @@
-- [<code>[8/11]</code> TODO](#org27d2236)
-- [Development](#org10b4ccb)
-  - [How to setup environment](#org3f5c80a)
-  - [How to develop](#org62a294d)
-  - [How to build](#orgb0424bc)
+- [Development](#org59b090a)
+  - [How to setup environment](#orgbfba077)
+  - [How to develop](#org4b31958)
+  - [How to build](#org9920245)
+- [<code>[8/11]</code> TODO](#orgf671da0)
 
 
 
-<a id="org27d2236"></a>
+<a id="org59b090a"></a>
+
+# Development
+
+
+<a id="orgbfba077"></a>
+
+## How to setup environment
+
+```bash
+npm install
+```
+
+
+<a id="org4b31958"></a>
+
+## How to develop
+
+```bash
+npm run dev
+```
+
+
+<a id="org9920245"></a>
+
+## How to build
+
+```bash
+npm run build
+```
+
+The code will be built as `bundle.js`, runnable by opening the `index.html`
+
+
+<a id="orgf671da0"></a>
 
 # <code>[8/11]</code> TODO
 
@@ -31,37 +65,3 @@
 -   [ ] Split routing into modules
     -   [ ] get state from hash (purescript-routing)
 -   [ ] persist states (e.g. user, etc)
-
-
-<a id="org10b4ccb"></a>
-
-# Development
-
-
-<a id="org3f5c80a"></a>
-
-## How to setup environment
-
-```bash
-npm install
-```
-
-
-<a id="org62a294d"></a>
-
-## How to develop
-
-```bash
-npm run dev
-```
-
-
-<a id="orgb0424bc"></a>
-
-## How to build
-
-```bash
-npm run build
-```
-
-The code will be built as `bundle.js`, runnable by opening the `index.html`
