@@ -1,21 +1,21 @@
-- [References](#orgf5b8cfa)
-  - [UI Libraries](#org9f69e18)
-  - [Routing](#orgdf9f8ca)
-  - [PureScript + X](#orga5e0613)
-  - [Interesting](#orgb531e1b)
-- [Development](#orgc465178)
-  - [Preparation](#orge8abfac)
-    - [Prerequisites](#org43a94f2)
-    - [Installing the Compiler](#org5c7e15c)
-    - [Setting up the Development Environment](#org9e0558b)
-    - [Create project](#org19c7a29)
-    - [Working in `PSCi`](#orgd6a420e)
-  - [Troubleshooting](#org46e32cd)
-    - [Missing `libtinfo.so.5`](#org0e30129)
+- [References](#orgf0fe313)
+  - [UI Libraries](#orge59cb1d)
+  - [Routing](#orgfe496ca)
+  - [PureScript + X](#orgca0f8d7)
+  - [Interesting](#org05c4b61)
+- [Development](#orgb86eca4)
+  - [Preparation](#orgc1d3e5d)
+    - [Prerequisites](#org18d9f0c)
+    - [Installing the Compiler](#orgcadb0f8)
+    - [Setting up the Development Environment](#org44c5ad2)
+    - [Create project](#orgd94dc6d)
+    - [Working in `PSCi`](#orgab4eeee)
+  - [Troubleshooting](#org77bac5c)
+    - [Missing `libtinfo.so.5`](#orgf873747)
 
 
 
-<a id="orgf5b8cfa"></a>
+<a id="orgf0fe313"></a>
 
 # References
 
@@ -31,7 +31,7 @@
 7.  [GitHub Trending](https://github.com/trending/purescript)
 
 
-<a id="org9f69e18"></a>
+<a id="orge59cb1d"></a>
 
 ## UI Libraries
 
@@ -49,7 +49,7 @@
 6.  [purescript-css](https://github.com/slamdata/purescript-css): A type-safe library for describing, manipulating, and rendering CSS.
 
 
-<a id="orgdf9f8ca"></a>
+<a id="orgfe496ca"></a>
 
 ## Routing
 
@@ -62,7 +62,7 @@
         -   [Workspace.purs](https://github.com/slamdata/slamdata/blob/master/src/SlamData/Workspace.purs)
 
 
-<a id="orga5e0613"></a>
+<a id="orgca0f8d7"></a>
 
 ## PureScript + X
 
@@ -75,7 +75,7 @@
 6.  <https://github.com/zudov/purescript-cycle> (Cycle.js)
 
 
-<a id="orgb531e1b"></a>
+<a id="org05c4b61"></a>
 
 ## Interesting
 
@@ -83,17 +83,17 @@
 2.  [wring](https://github.com/osener/wring): Extract content from webpages using CSS Selectors, XPath, and JS expressions. (phantomjs)
 
 
-<a id="orgc465178"></a>
+<a id="orgb86eca4"></a>
 
 # Development
 
 
-<a id="orge8abfac"></a>
+<a id="orgc1d3e5d"></a>
 
 ## Preparation
 
 
-<a id="org43a94f2"></a>
+<a id="org18d9f0c"></a>
 
 ### Prerequisites
 
@@ -101,22 +101,22 @@
 2.  purescript
 
 
-<a id="org5c7e15c"></a>
+<a id="orgcadb0f8"></a>
 
 ### Installing the Compiler
 
 1.Install from package manager
 
 ```bash
-pacman -S purescript
+# pacman -S purescript
 ```
 
 2.Install use `Purescript Version Manager` [psvm](https://github.com/ThomasCrevoisier/psvm-js)
 
 ```bash
-npm install -g psvm
-psvm install-latest
-psvm use <installed-version>
+$ npm install -g psvm
+$ psvm install-latest
+$ psvm use <installed-version>
 ```
 
 3.To install `purescript` from `npm`, you *may* need to install `haskell-stack` package first
@@ -124,51 +124,49 @@ psvm use <installed-version>
 <https://docs.haskellstack.org/en/stable/install_and_upgrade/>
 
 ```bash
-apt-get install haskell-stack
-# or
-pacman -S haskell-stack
+# pacman -S haskell-stack
 ```
 
 then
 
 ```bash
-npm install -g purescript
+$ npm install -g purescript
 ```
 
 
-<a id="org9e0558b"></a>
+<a id="org44c5ad2"></a>
 
 ### Setting up the Development Environment
 
 ```bash
-npm install -g pulp bower
+$ npm install -g pulp bower
 ```
 
 
-<a id="org19c7a29"></a>
+<a id="orgd94dc6d"></a>
 
 ### Create project
 
 ```bash
-pulp init
+$ pulp init
 ```
 
 
-<a id="orgd6a420e"></a>
+<a id="orgab4eeee"></a>
 
 ### Working in `PSCi`
 
 ```bash
-pulp psci
+$ pulp psci
 ```
 
 
-<a id="org46e32cd"></a>
+<a id="org77bac5c"></a>
 
 ## Troubleshooting
 
 
-<a id="org0e30129"></a>
+<a id="orgf873747"></a>
 
 ### Missing `libtinfo.so.5`
 

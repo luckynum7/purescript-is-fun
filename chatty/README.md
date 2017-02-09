@@ -1,12 +1,12 @@
-- [<code>[8/11]</code> TODO](#org09a2435)
-- [Development](#org9486cfd)
-  - [How to setup environment](#org84ab53d)
-  - [How to develop](#orga059cad)
-  - [How to build](#org898813c)
+- [<code>[8/11]</code> TODO](#org27d2236)
+- [Development](#org10b4ccb)
+  - [How to setup environment](#org3f5c80a)
+  - [How to develop](#org62a294d)
+  - [How to build](#orgb0424bc)
 
 
 
-<a id="org09a2435"></a>
+<a id="org27d2236"></a>
 
 # <code>[8/11]</code> TODO
 
@@ -33,12 +33,12 @@
 -   [ ] persist states (e.g. user, etc)
 
 
-<a id="org9486cfd"></a>
+<a id="org10b4ccb"></a>
 
 # Development
 
 
-<a id="org84ab53d"></a>
+<a id="org3f5c80a"></a>
 
 ## How to setup environment
 
@@ -47,7 +47,7 @@ npm install
 ```
 
 
-<a id="orga059cad"></a>
+<a id="org62a294d"></a>
 
 ## How to develop
 
@@ -56,10 +56,12 @@ npm run dev
 ```
 
 
-<a id="org898813c"></a>
+<a id="orgb0424bc"></a>
 
 ## How to build
 
 ```bash
 npm run build
 ```
+
+The code will be built as `bundle.js`, runnable by opening the `index.html`

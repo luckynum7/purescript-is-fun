@@ -44,3 +44,5 @@ npm run dev
 #+BEGIN_SRC bash
 npm run build
 #+END_SRC
+
+The code will be built as ~bundle.js~, runnable by opening the ~index.html~

@@ -74,15 +74,15 @@
 1.Install from package manager
 
 #+BEGIN_SRC bash
-pacman -S purescript
+# pacman -S purescript
 #+END_SRC
 
 2.Install use =Purescript Version Manager= [[https://github.com/ThomasCrevoisier/psvm-js][psvm]]
 
 #+BEGIN_SRC bash
-npm install -g psvm
-psvm install-latest
-psvm use <installed-version>
+$ npm install -g psvm
+$ psvm install-latest
+$ psvm use <installed-version>
 #+END_SRC
 
 3.To install ~purescript~ from ~npm~, you /may/ need to install ~haskell-stack~ package first
@@ -90,33 +90,31 @@ psvm use <installed-version>
 [[https://docs.haskellstack.org/en/stable/install_and_upgrade/]]
 
 #+BEGIN_SRC bash
-apt-get install haskell-stack
-# or
-pacman -S haskell-stack
+# pacman -S haskell-stack
 #+END_SRC
 
 then
 
 #+BEGIN_SRC bash
-npm install -g purescript
+$ npm install -g purescript
 #+END_SRC
 
 *** Setting up the Development Environment
 
 #+BEGIN_SRC bash
-npm install -g pulp bower
+$ npm install -g pulp bower
 #+END_SRC
 
 *** Create project
 
 #+BEGIN_SRC bash
-pulp init
+$ pulp init
 #+END_SRC
 
 *** Working in ~PSCi~
 
 #+BEGIN_SRC bash
-pulp psci
+$ pulp psci
 #+END_SRC
 
 ** Troubleshooting
