@@ -42,6 +42,11 @@ routing  =
   profile <|>
   dashboard
 
+-- routeSignal :: forall eff. Driver eff
+--                -> (Aff (avar :: AVAR, dom :: DOM | eff)) Unit
+-- routeSignal driver = do
+--   Tuple old new <- matchesAff routing
+--   redirects driver old new
 
 type State = { currentPage :: String }
 

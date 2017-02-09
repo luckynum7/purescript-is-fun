@@ -1,9 +1,7 @@
 module Chatty.Component.Dashboard where
 
 import Prelude
-
 import Data.Maybe (Maybe(..))
-
 import Halogen as H
 import Halogen.HTML as HH
 

@@ -1,9 +1,7 @@
 module Chatty.Component.Profile where
 
 import Prelude
-
 import Data.Maybe (Maybe(..))
-
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Events as HE
