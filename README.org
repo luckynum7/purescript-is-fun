@@ -41,6 +41,9 @@
       1) [[https://github.com/slamdata/purescript-routing/blob/master/GUIDE.md][A Guide to purescript-routing]]
       2) [[http://www.parsonsmatt.org/2015/10/22/purescript_router.html][Using purescript-routing with purescript-halogen]]
          - [[https://github.com/parsonsmatt/purescript-routing-example][purescript-routing-example]]
+      3) [[https://github.com/slamdata/slamdata]] (example)
+         - [[https://github.com/slamdata/slamdata/blob/master/src/SlamData/Workspace/Routing.purs][Workspace/Routing.purs]]
+         - [[https://github.com/slamdata/slamdata/blob/master/src/SlamData/Workspace.purs][Workspace.purs]]
 
 ** PureScript + X
 
